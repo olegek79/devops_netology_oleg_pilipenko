@@ -1,14 +1,15 @@
 # devops_netology_oleg_pilipenko
 # dz 2
 
-\ Local .terraform directories
+\ Local .terraform directories \
+
 \*\*/.terraform/* сопоставляем каталог terraform
 
 \ .tfstate files
 
 \ *.tfstate \ игнорировать файлы с окончанием .tfstate
 
-\ *.tfstate.* \ игонирировать что угодно где в составе есть tfstate с любыми символами за звездочкой.
+\ *.tfstate.\* \ игонирировать что угодно где в составе есть tfstate с любыми символами за звездочкой.
 
 \ Crash log files
 
