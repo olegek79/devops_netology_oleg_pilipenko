@@ -6,21 +6,22 @@
 
 \ .tfstate files
 
-*.tfstate \ игнорировать файлы с окончанием .tfstate
-*.tfstate.* \ игонирировать что угодно где в составе есть tfstate с любыми символами за звездочкой.
+\ *.tfstate \ игнорировать файлы с окончанием .tfstate
+
+\ *.tfstate.* \ игонирировать что угодно где в составе есть tfstate с любыми символами за звездочкой.
 
 \ Crash log files
 
 crash.log игнорировать данный файл журналов
 
 
-*.tfvars \ игнорировать любые файлы с окончанием .tfvars
+\ *.tfvars \ игнорировать любые файлы с окончанием .tfvars
 
 
 override.tf \ игнорировать конкретно этот файл
 ovverride.tf.json \ и этот файл
-*_override.tf \ игнорировать все файлы с окончанием _override.tf 
-*_override.tf.json \ и с окончанием _override.tf.json
+\ *_override.tf \ игнорировать все файлы с окончанием _override.tf 
+\ *_override.tf.json \ и с окончанием _override.tf.json
 
 
 \ Ignore CLI configuration files
