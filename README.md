@@ -26,5 +26,7 @@ ovverride.tf.json \ и этот файл
 
 
 \ Ignore CLI configuration files
+
 .terraformrc игнорировать файлы с окончанием .terraformrc 
-terraform.rc  и terraform.rc
+
+\ terraform.rc  и игнорировать файлы с окончанием terraform.rc
