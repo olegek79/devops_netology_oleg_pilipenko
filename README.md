@@ -2,7 +2,7 @@
 # dz 2
 
 \ Local .terraform directories
-**/.terraform/* сопоставляем каталог terraform
+\ **/.terraform/* сопоставляем каталог terraform
 
 \ .tfstate files
 
