@@ -1,0 +1,70 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># devops_netology_oleg_pilipenko\r\n# dz 2\r\n# изменение 3\r\n\r\n# Local .terraform directories\r\n**/.terraform/*\r\n\r\n# .tfstate files\r\n*.tfstate # игнорировать по типу файла во всех директориях .tfstate\r\n*.tfstate.* # игонирировать что угодно начинающееся на .tfstate. с любыми символами за звездочкой, кроме косой черты.\r\n\r\n# Crash log files\r\ncrash.log игнорировать данный файл\r\n\r\n# Exclude all .tfvars files, which are likely to contain sentitive data, such as\r\n# password, private keys, and other secrets. These should not be part of version\r\n# control as they are data points which are potentially sensitive and subject\r\n# to change depending on the environment.\r\n#\r\n*.tfvars # игнорировать любые файлы с окончанием .tfvars\r\n\r\n# Ignore override files as they are usually used to override resources locally and so\r\n# are not checked in\r\noverride.tf # игнорировать конкретно этот файл\r\noverride.tf.json # и этот\r\n*_override.tf # игнорировать файлы начала которых до _override.tf и _override.tf.json будет любым\r\n*_override.tf.json\r\n\r\n# Include override files you do wish to add to version control using negated pattern\r\n#\r\n# !example_override.tf\r\n\r\n# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan\r\n# example: *tfplan*\r\n\r\n# Ignore CLI configuration files\r\n.terraformrc игнорировать конкретные файлы\r\nterraform.rc\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 0515daabc1887ba377e0ecc53d21fae8658e4394)
++++ b/README.md	(date 1635701157437)
+@@ -1,39 +1,55 @@
+ # devops_netology_oleg_pilipenko
++
+ # dz 2
++
+ # изменение 3
+ 
++# Задание №3 – Ветки
++
+ # Local .terraform directories
++
+ **/.terraform/*
+ 
+ # .tfstate files
++
+ *.tfstate # игнорировать по типу файла во всех директориях .tfstate
+ *.tfstate.* # игонирировать что угодно начинающееся на .tfstate. с любыми символами за звездочкой, кроме косой черты.
+ 
+ # Crash log files
++
+ crash.log игнорировать данный файл
+ 
+ # Exclude all .tfvars files, which are likely to contain sentitive data, such as
++
+ # password, private keys, and other secrets. These should not be part of version
++
+ # control as they are data points which are potentially sensitive and subject
++
+ # to change depending on the environment.
++
+ #
++
+ *.tfvars # игнорировать любые файлы с окончанием .tfvars
+ 
+ # Ignore override files as they are usually used to override resources locally and so
++
+ # are not checked in
+-override.tf # игнорировать конкретно этот файл
+-override.tf.json # и этот
++
++override.tf # игнорировать конкретно этот файл override.tf.json # и этот
+ *_override.tf # игнорировать файлы начала которых до _override.tf и _override.tf.json будет любым
+ *_override.tf.json
+ 
+ # Include override files you do wish to add to version control using negated pattern
++
+ #
++
+ # !example_override.tf
+ 
+ # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
++
+ # example: *tfplan*
+ 
+ # Ignore CLI configuration files
+-.terraformrc игнорировать конкретные файлы
+-terraform.rc
++
++.terraformrc игнорировать конкретные файлы terraform.rc
+ 
