@@ -2,6 +2,7 @@
 # dz 2
 # dz 3 intro homework
 # именяем файл задание 3 
+# pycharm 
 
 \ Local .terraform directories \
 
