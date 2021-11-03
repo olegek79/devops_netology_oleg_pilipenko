@@ -8,3 +8,5 @@ for param in "$@"; do
 done
 
 echo "====="
+
+# переделка 4
