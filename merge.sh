@@ -8,3 +8,5 @@ for param in "$@"; do
 done
 
 #переделка 4
+#  изменения подготовка файла merge.sh
+# изменения merge: use shift
