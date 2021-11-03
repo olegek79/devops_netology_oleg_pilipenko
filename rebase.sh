@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # display command line options
 
 count=1
@@ -9,5 +9,12 @@ done
 
 echo "====="
 
-# переделка 4
+# переделка
 #  редактируем из ветки main 4444
+=======
+# git rebase 1
+<<<<<<< HEAD
+
+=======
+# git rebase 2
+>>>>>>> b6191b3 (git-rebase 2 изменения 4)
