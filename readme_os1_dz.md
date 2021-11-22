@@ -22,6 +22,13 @@ openat(AT_FDCWD, "/usr/share/misc/magic.mgc", O_RDONLY) = 3
 Основываясь на знаниях о перенаправлении потоков предложите способ обнуления открытого удаленного файла 
 (чтобы освободить место на файловой системе).
 
+что я попробовал, в очередной раз, установил nginx sudo apt install nginx
+далее зашел в дректорию где лежат его логи, cd /var/log/nginx
+удаляю sudo rm access.log
+пробую найти по удаленному файлу и процессу ps aux -P | grep nginx | grep access.log пробовал разные комбинации, все время вовращает пустую строку
+далее если бы вернулось,  то как в лекции cat /proc/181248/fd/3 > /var/log/nginx/access.log только пиды мои с nginx.
+
+
 в теории я понял что необходимо сделать и в чем смысл, но на практике проделать я не смог, смыл такой что 
 у нас какой то процесс работает с файлом, но файл мы удилии, нам как я понял из леции узнать PID процесса, вот я это и не смог сделать
 возвращает пустую строку, на пример я открыл файл чего то там сделал в nano, потом закрыл и удалил, наверное вот это что то там ине правильно
@@ -38,6 +45,16 @@ root@vagrant:~# dpkg -L bpfcc-tools | grep sbin/opensnoop
 /usr/sbin/opensnoop-bpfcc
 На какие файлы вы увидели вызовы группы open за первую секунду работы утилиты? 
 Воспользуйтесь пакетом bpfcc-tools для Ubuntu 20.04. Дополнительные сведения по установке.
+
+переделал root@vagrant:~# /usr/sbin/opensnoop-bpfcc
+PID    COMM               FD ERR PATH
+376    systemd-udevd      14   0 /sys/fs/cgroup/unified/system.slice/systemd-udevd.service/cgroup.procs
+376    systemd-udevd      14   0 /sys/fs/cgroup/unified/system.slice/systemd-udevd.service/cgroup.threads
+763    vminfo              4   0 /var/run/utmp
+562    dbus-daemon        -1   2 /usr/local/share/dbus-1/system-services
+562    dbus-daemon        18   0 /usr/share/dbus-1/system-services
+562    dbus-daemon        -1   2 /lib/dbus-1/system-services
+562    dbus-daemon        18   0 /var/lib/snapd/dbus-1/system-services/
 
 как я не пытался и под root  в том числе результат был таков
 /usr/sbin/opensnoop-bpfcc
